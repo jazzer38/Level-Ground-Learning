@@ -1,0 +1,218 @@
+/*Reset to default*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/*Background and text for body*/
+body {
+    background-color: #ffe6ee;
+    color: #4a4a4a;
+    line-height: 1.6;
+    padding:20px;
+}
+
+/*Header and nav*/
+header {
+    background-color: #f9cde3;
+    padding: 15px 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #8a2e68;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a:hover {
+    color: #4a154b;
+    text-decoration:underline;
+}
+
+/*Goal and fact slider*/
+.goal-fact-slider {
+    display: flex;
+    gap:40px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: content;
+}
+
+/*Goal text*/
+.goal-text {
+    flex: 1 1 400px;
+    background: #fff0f6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(138, 46, 104, 0.15);
+}
+
+.goal-text h1 {
+    color:#8a2e68;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.goal-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/*Fact slider*/
+.fact-slider {
+    flex: 1 1 250px;
+    background: #fff0f6;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 8px rgba(138, 46, 104, 0.15);
+}
+
+.fact-slider button {
+    background-color: #8a2e68;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3 ease;
+    margin-bottom: 15px;
+}
+
+.fact-slider button:hover {
+    background-color: #4a154b;
+    text-decoration: underline;
+}
+
+.fact-slider p {
+    font-style: italic;
+    font-size: 1rem;
+    color: #5a2a50;
+    min-height: 40px;
+}
+
+/*Info and logo section*/
+.info-logo-relation {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info-text h1 {
+    color: #8a2e68;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.info-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.info-logo {
+    flex: 0 0 200px;
+    max-width:100%;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(138, 46, 104, 0.2);
+}
+
+/*Tutors section*/
+h1 {
+    text-align: center;
+    color: #8a2e68;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.tutors-info {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.about-tutors {
+    background: #fff0f6;
+    padding: 20px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(148, 46, 104, 0.15);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-tutors img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px rgba(138, 46, 104, 0.3);
+}
+
+.about-tutors h2 {
+    color: #8a2e68;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.about-tutors p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #5a2a50;
+}
+
+/*Articles*/
+.article-one, .article-two {
+    max-width: 300px;
+    margin: 0 auto 40px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(138, 46, 104, 0.2);
+}
+
+.article-one img, .article.two img {
+    max-width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+/*Responsive*/
+@media (max-width: 900px) {
+    .goal-fact-slider, .info-logo-relation, .tutors-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+nav ul {
+    flex-direction: column;
+    gap: 15px;
+}
+
+nav ul li a {
+    font-size: 1.2rem;
+    }
+}
