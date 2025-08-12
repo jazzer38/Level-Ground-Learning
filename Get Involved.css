@@ -1,0 +1,84 @@
+/*Get Involved Section*/
+.get-involved-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap:30px;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/*Donation and tutor application*/
+.donation-area,
+.tutor-application {
+    background: #fdf4f7;
+    border: 2px solid #ff6f91;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(255, 111, 145, 0.2);
+    padding: 25px;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+/*Overlay box in donation section*/
+.overlay-box {
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(255, 111, 145, 0.4);
+    flex-grow: 1;
+}
+
+/*Headings inside the boxes*/
+.donation-area h2,
+.tutor-application h2 {
+    margin-top: 0;
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+/*Paragraph styling*/
+.donation-area p,
+.tutor-application p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+/*Buttons*/
+.donate-button,
+.apply-button {
+    align-self: start;
+    background-color: #ff6f91;
+    color: white;
+    text-decoration:solid;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: background-color 0.3 ease, box-shadow 0.3 ease;
+    box-shadow: 0 3px 6px rgba(255, 11, 145, 0.5);
+}
+
+/*Button hover*/
+.donate-button:hover,
+.apply-button:hover {
+    background-color: #e55577;
+    box-shadow: 0 6px 12px rgba(229, 85, 119, 0.7);
+    cursor: pointer;
+}
+
+/*Responsive*/
+@media (max-width: 480px) {
+    .get-involved-container {
+        padding: 15px;
+        gap: 20px;
+    }
+
+.donation-area,
+.tutor-application {
+    padding: 20px;
+}   
+}
