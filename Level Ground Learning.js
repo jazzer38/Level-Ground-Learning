@@ -1,27 +1,41 @@
-/*Select testimonial elements*/
+/* -------------------- Facts Generator -------------------- */
+const facts = [
+    "Tutoring can improve a student's grades and confidence.",
+    "Regular tutoring helps students retain information longer.",
+    "Students who get tutoring often perform better on standardized tests.",
+    "Tutoring can be customized to fit the student's learning style."
+];
+
+const factButton = document.getElementById('factGenerator');
+const factText = document.getElementById('factText');
+
+factButton.addEventListener('click', () => {
+    const randomIndex = Math.floor(Math.random() * facts.length);
+    factText.textContent = facts[randomIndex];
+});
+
+/* -------------------- Testimonials Slider -------------------- */
 const testimonials = document.querySelectorAll('.testimonial');
 let currentIndex = 0;
 
-/*Function to make the testimonial show*/
+// Show testimonial by index
 function showTestimonial(index) {
     testimonials.forEach((t, i) => {
-
-        /*Make only current testimonial visible*/
         t.classList.toggle('active', i === index);
     });
 }
 
-/*Show the previous testimonial with the button click*/
-document.getElementById('prevTestimonial').onclick = () => {
+// Previous button
+document.getElementById('prevTestimonial').addEventListener('click', () => {
     currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
     showTestimonial(currentIndex);
-};
+});
 
-/*Show the next testimonial with the button click*/
-document.getElementById('nextTestimonial').onclick = () => {
+// Next button
+document.getElementById('nextTestimonial').addEventListener('click', () => {
     currentIndex = (currentIndex + 1) % testimonials.length;
     showTestimonial(currentIndex);
-};
+});
 
-/*Show the first testimonial when the page loads*/
+// Show first testimonial on page load
 showTestimonial(currentIndex);

@@ -1,56 +1,131 @@
-/*Form section styling*/
-form {
-    max-width: 500px;
-    margin: auto;
+/* Reset & base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ffe6ee;
+    color: #4a4a4a;
+    line-height: 1.6;
     padding: 20px;
-    background: #f7f7f7;
-    border-radius: 10px;
 }
 
-/*Labels*/
-label {
-    font-weight: bold;
-    display: block;
-    margin-top: 15px;
+/* Header matches homepage */
+header {
+    background-color: #f9cde3;
+    padding: 15px 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 25px;
 }
 
-/*Inputs and selects*/
-input[type="text"],
-input[type="email"],
-select {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+header h1 {
+    font-size: 2.5rem;
+    color: #8a2e68;
+    margin-bottom: 10px;
+    font-weight: 700;
 }
 
-/*Checkboxes and buttons*/
-.checkbox-group {
-    margin-top:5px;
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
-.checkbox-group div {
-    margin-bottom: 5px;
+nav ul li a {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-weight: 600;
 }
 
-/*Submit button*/
-button {
-    margin-top: 20px;
-    background: #4cafef;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #3a9fd9;
+nav ul li a:hover {
+    color: #4a154b;
     text-decoration: underline;
 }
 
-/*'Other' text input*/
+/* Signup form container */
+.signup-page {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 25px;
+    background: #fff0f6;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(138,46,104,0.2);
+}
+
+/* Page title */
+.page-title {
+    text-align: center;
+    color: #8a2e68;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Labels & inputs */
+label {
+    font-weight: bold;
+    margin-top: 12px;
+    display: block;
+}
+
+input[type="text"], input[type="email"], select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Checkbox groups */
+.checkbox-group {
+    margin-top: 10px;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+/* Days checkboxes inline */
+.checkbox-group.days {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Hidden inputs */
 .hidden {
     display: none;
+}
+
+/* Submit button */
+button {
+    margin-top: 20px;
+    background-color: #8a2e68;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4a154b;
+}
+
+/* Logo */
+.signup-logo {
+    display: block;
+    margin: 20px auto 0 auto;
+    max-width: 120px;
 }

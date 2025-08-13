@@ -1,80 +1,86 @@
-<!--Links to sheets-->    
-    <head>
-    <link rel="stylesheet" href="Level Ground Learning.css">
-    <script src="Level Ground Learning.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Level Ground Learning: Home</title>
-    </head>
-    
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="Level Ground Learning.css">
+    <!-- Link JS (defer ensures it runs after HTML loads) -->
+    <script src="Level Ground Learning.js" defer></script>
+</head>
+<body>
     <!--Site Header and Navigation-->
     <header>
         <h1>Level Ground Learning</h1>
-<nav>
-    <ul>
-        <li><a href="Untitled-1.html">Home</a></li>
-        <li><a href="Untitled-2.html">Get Involved</a></li>
-        <li><a href="Untitled-3.html">Signup</a></li>
-    </ul>
-</nav>
-</header>
-<body>
-<!--Our Goal + Fact Slider-->
-<div class = "goal-fact-slider">
-    <div class ="goal-text">
-        <h1>Our Goal</h1>
-<p>At Level Ground Learning, we're dedicated to ensuring every child has an equal opportunity to thrive academically. Our goal is to offer free, top-qaulity tutoring to students who need extra support but face barriers to accessing it. By combining personalized mentorship, accessible learning resources, and strong community partnerships, we strive to create an educational environment where every student can succeed, one learner at a time</p>
-</div>
+        <nav>
+            <ul>
+                <li><a href="Level Ground Learning.html">Home</a></li>
+                <li><a href="Get Involved.html">Get Involved</a></li>
+                <li><a href="Signup.html">Signup</a></li>
+                <li><a href="Tutors.html">Meet our Tutors!</a></li>
+                <li><a href="Resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<!--Generator fact generator-->
-<div class="fact-slider">
-    <button id ="factGenerator">Learn facts about tutoring!</button>
-    <p id="factText"></p>
-</div>
-</div>
+    <!--Our Goal + Fact Slider-->
+    <div class="goal-fact-slider">
+        <div class="goal-text">
+            <h1>Our Goal</h1>
+            <p>At Level Ground Learning, we're dedicated to ensuring every child has an equal opportunity to thrive academically. Our goal is to offer free, top-quality tutoring to students who need extra support but face barriers to accessing it. By combining personalized mentorship, accessible learning resources, and strong community partnerships, we strive to create an educational environment where every student can succeed, one learner at a time.</p>
+        </div>
 
-<!--Info section + Logo-->
-<div class="info-logo-relation">
-<div class="info-text">
-    <h1>Important Info</h1>
-<p>We're a group of passionate high school sophmore from North Jersey who are dedicatd to giving back to those less fortunate through education. Led by Jasmine, Level Ground Learning Offers free acadenic support to kids in our community. Based in Westfield, we hold tutoring sessions at local libraries as well as online. We provide a safe, welcoming, and accessible space for learning. Our sessions will most likely take place on most weekdays from 6:30-8:00 PM</p>
-</div>
-<img src="logo for tutoring.png" class="info-logo" alt="Level Ground Learning logo: a pink book open with a yellow sun rising out behind it">
-</div>
+        <!--Fact generator-->
+        <div class="fact-slider">
+            <button id="factGenerator">Learn facts about tutoring!</button>
+            <p id="factText"></p>
+        </div>
+    </div>
 
+    <!--Info section + Logo-->
+    <div class="info-logo-relation">
+        <div class="info-text">
+            <h1>Important Info</h1>
+            <p>We're a group of passionate high school sophomores from North Jersey who are dedicated to giving back to those less fortunate through education. Led by Jasmine, Level Ground Learning offers free academic support to kids in our community. Based in Westfield, we hold tutoring sessions at local libraries as well as online. We provide a safe, welcoming, and accessible space for learning. Our sessions will most likely take place on most weekdays from 6:30-8:00 PM.</p>
+        </div>
+        <img src="logo for tutoring.png" class="info-logo" alt="Level Ground Learning logo: a pink book open with a yellow sun rising out behind it">
+    </div>
+
+    <!--Articles-->
     <div class="article-one">
-        <a href="https://news.harvard.edu/gazette/story/2023/11/new-study-finds-wide-gap-in-sat-act-test-scores-between-wealthy-lower-income-kids/" alt="picture of standardized test bubble answer page across the picture at a diagonal angle. There is a pencl next to it and they are both on a gray background on a table">
-        <img src="assets/pic from the article">
+        <a href="https://news.harvard.edu/gazette/story/2023/11/new-study-finds-wide-gap-in-sat-act-test-scores-between-wealthy-lower-income-kids/">
+            <img src="Standardized.webp" alt="picture of standardized test bubble answer page with a pencil on a gray table">
         </a>
     </div>
     <div class="article-two">
-        <a href="https://www.bbc.com/news/articles/c4g0rxz2yj4o" alt="picture of a young girl from behind from the waist up. She is holding someone's hand and walking down a street. She has blond hair and two pigtails in ribbons.">
-        <img src="assets/pic from the article">
+        <a href="https://www.bbc.com/news/articles/c4g0rxz2yj4o">
+            <img src="Further.webp" alt="picture of a young girl from behind holding someone's hand, walking down a street">
         </a>
     </div>
 
-<!--Testimonial section-->
-<section class="testimonials">
-    <h2>What People Are Saying</h2>
+    <!--Testimonial section-->
+    <section class="testimonials">
+        <h2>What People Are Saying</h2>
 
-<!--Container holding the testimonials-->
-<div class="testimonial-slider">
+        <!--Container holding the testimonials-->
+        <div class="testimonial-slider">
 
-<!--Single testimonial-->
-<div class="testimonial active">
-    <p>"Jasmine helped me learn multiplication and division and allowed me to bring my grades up from failing to A's and B's!"</p>
-    <h4>Malachi, 5th Grade Student</h4>
-</div>
+            <!--Single testimonial-->
+            <div class="testimonial active">
+                <p>"Jasmine helped me learn multiplication and division and allowed me to bring my grades up from failing to A's and B's!"</p>
+                <h4>Malachi, 5th Grade Student</h4>
+            </div>
 
-<div class="testimonial">
-    <p>Volunteering here has been so rewarding and truly makes me feel like I am making a difference! It is so fun to watch each students' progress</p>
-    <h4>Jasmine, Tutor</h4>
-</div>
-</div>
+            <div class="testimonial">
+                <p>Volunteering here has been so rewarding and truly makes me feel like I am making a difference! It is so fun to watch each student's progress.</p>
+                <h4>Jasmine, Tutor</h4>
+            </div>
+        </div>
 
-<!--Buttons to navigate testimonials-->
-<button id="prevTestimonial">Prev</button>
-<button id="nextTestimonial">Next</button>
-</div>
-</section>
-
+        <!--Buttons to navigate testimonials-->
+        <button id="prevTestimonial">Prev</button>
+        <button id="nextTestimonial">Next</button>
+    </section>
 </body>
 </html>

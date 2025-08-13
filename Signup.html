@@ -1,37 +1,34 @@
-<!--Links to sheets-->
 <head>
-<link rel="stylesheet" href="Signup.css">
-<script src="Signup.js"></script>
-<title>Level Ground Learning: Signup</title>
+    <link rel="stylesheet" href="Signup.css">
+    <script src="Signup.js" defer></script>
+    <title>Level Ground Learning: Signup</title>
 </head>
 
-<!--Header and Navigation-->
-<header>
-    <h1>Signup</h1>
+<body>
+<header class="site-header">
+    <h1>Level Ground Learning</h1>
     <nav>
         <ul>
-         <li><a href="Level Ground Learning.html">Home</a></li>
-         <li><a href="Get Involved.html">Get Involved</a></li>
-         <li><a href="Signup.html">Signup</a></li>
-         <li><a href="Tutors.html">Meet the Tutors!</a></li>
-         <li><a href="Resources.html"></a></li>
+            <li><a href="Level Ground Learning.html">Home</a></li>
+            <li><a href="Get Involved.html">Get Involved</a></li>
+            <li><a href="Signup.html">Signup</a></li>
+            <li><a href="Tutors.html">Meet the Tutors!</a></li>
+            <li><a href="Resources.html">Resources</a></li>
         </ul>
     </nav>
 </header>
 
-<!--Signup Instructions-->
-<p>
-    To sign up for tutoring, enter your name, grade, school, and email</p>
+<div class="signup-page">
+    <h2 class="page-title">Signup for Tutoring</h2>
+    <p>Enter your name, grade, school, and email to join us!</p>
 
-<!--Signup form and Logo-->
-<div class="signup">
     <form action="https://formsubmit.co/jasmineparran38@gmail.com" method="POST">
 
-        <!--Name for form-->
+        <!--Name-->
         <label for="name-form">Name:</label>
         <input type="text" id="name-form" name="name" required/>
 
-        <!--Grade dropdown for form-->
+        <!--Grade-->
         <label for="grade-form">Grade:</label>
         <select id="grade-form" name="grade" required>
             <option value="" disabled selected>Select your grade</option>
@@ -47,83 +44,58 @@
             <option>10-12 grades</option>
         </select>
 
-        <!--School for form-->
+        <!--School-->
         <label for="school-form">School:</label>
         <input type="text" id="school-form" name="school" required/>
 
-        <!--Email for form-->
+        <!--Email-->
         <label for="email-form">Email:</label>
-        <input type="text" id="email-form" name="email" required/>
+        <input type="email" id="email-form" name="email" required/>
 
-        <!--Subjects multi-select-->
+        <!--Subjects-->
         <label>Subjects you want to help with:</label>
-
-        <div>
+        <div class="checkbox-group">
             <input type="checkbox" id="subject-math" name="subjects" value="Math" />
             <label for="subject-math">Math</label>
-        </div>
-        <div>
+
             <input type="checkbox" id="subject-science" name="subjects" value="Science" />
             <label for="subject-science">Science</label>
-        </div>
 
-        <!--'Other' text box-->
-        <label for="subjects-other">Other subjects or specifications</label>
-        <input type="text" id="subjects-other" name="subjects-other" placeholder="e.g., Geometry, Biology"
-        <div>
             <input type="checkbox" id="subject-english" name="subjects" value="English" />
             <label for="subject-english">English</label>
+
+            <input type="checkbox" id="subject-other" name="subjects" value="Other" />
+            <label for="subject-other">Other</label>
+            <input type="text" id="subject-other-input" name="subjects-other" placeholder="e.g., Geometry, Biology" class="hidden"/>
         </div>
 
-        <!--What days you are available-->
-        <label>Which days are you available for tutoring? (Select all that apply)</label>
-        <div>
-            <input type="checkbox" id="day-mon" name="available-days" value="Monday" />
-            <label for="day-mon">Monday</label>
-        </div>
-        <div>
-            <input type="checkbox" id="day-tue" name="available-days" value="Tuesday" />
-            <label for="day-tue">Tuesday</label>
-        </div>
-        <div>
-            <input type="checkbox" id="day-wed" name="available-days" value="Wednesday" />
-            <label for="day-wed">Wednesday</label>
-        </div>
-        <div>
-            <input type="checkbox" id="day-thur" name="available-days" value="Thursday" />
-            <label for="day-thur">Thursday</label>
-        </div>
-        <div>
-            <input type="checkbox" id="day-fri" name="available-days" value="Friday" />
-            <label for="day-fri">Friday</label>
-        </div>
-        <div>
-            <input type="checkbox" id="day-sat" name="available-days" value="Friday" />
-            <label for="day-sat">Saturday</label> 
-        </div>
-        <div>
-            <input type="checkbox" id="day-sun" name="available-days" value="Sunday" />
-            <label for="day-sun">Sunday</label>
+        <!--Available days-->
+        <label>Which days are you available?</label>
+        <div class="checkbox-group days">
+            <label><input type="checkbox" name="available-days" value="Monday"> Monday</label>
+            <label><input type="checkbox" name="available-days" value="Tuesday"> Tuesday</label>
+            <label><input type="checkbox" name="available-days" value="Wednesday"> Wednesday</label>
+            <label><input type="checkbox" name="available-days" value="Thursday"> Thursday</label>
+            <label><input type="checkbox" name="available-days" value="Friday"> Friday</label>
+            <label><input type="checkbox" name="available-days" value="Saturday"> Saturday</label>
+            <label><input type="checkbox" name="available-days" value="Sunday"> Sunday</label>
         </div>
 
-        <!--How did you hear about us? form-->
+        <!--How did you hear about us-->
         <label for="hear-about">How did you hear about us?</label>
         <select id="hear-about" name="hear-about" required>
             <option value="" disabled selected>Select an option</option>
-            <option value="Friend or Family"> Friend or Family Member</option>
+            <option value="Friend or Family">Friend or Family Member</option>
             <option value="Social Media">Social Media</option>
             <option value="School Counselor">School Counselor</option>
             <option value="Other">Other</option>
         </select>
-
-        <!--Text input for other-->
-        <input type="text" id="hear-about-other" placeholder="Please specify" style="display:none; margin-top:5px;"/>
-
+        <input type="text" id="hear-about-other" placeholder="Please specify" class="hidden"/>
 
         <!--Submit button-->
         <button type="submit">Submit</button>
     </form>
 
-    <!--Logo for tutoring-->
-    <img src="logo for tutoring.png" alt="Level Ground Learning logo: a pink book that is open with a yellow sun rising up behind it"
+    <img src="logo for tutoring.png" alt="Level Ground Learning logo: pink book with yellow sun rising" class="signup-logo"/>
 </div>
+</body>

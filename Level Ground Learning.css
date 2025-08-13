@@ -200,6 +200,14 @@ h1 {
     border-radius: 10px;
 }
 
+/*Testimonials*/
+.testimonial {
+  display: none;
+}
+
+.testimonial.active {
+  display: block; 
+}
 /*Responsive*/
 @media (max-width: 900px) {
     .goal-fact-slider, .info-logo-relation, .tutors-info {
