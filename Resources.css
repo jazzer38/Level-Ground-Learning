@@ -1,10 +1,28 @@
-/*CSS for Resources*/
+/*Header and navigation*/
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffe6ee;
+}
+
+/* Header + Navigation */
 header {
     background: #f9cde3;
     padding: 15px 20px;
-    border-radius: 8px;
+    border-radius: 10px;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 header h1 {
@@ -13,20 +31,150 @@ header h1 {
     margin-bottom: 10px;
     font-weight: 700;
 }
+
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #4a4a4a;
     font-weight: 600;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
     color: #4a154b;
     text-decoration: underline;
+}
+
+/*General*/
+main.resources {
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+    padding: 20px;
+}
+
+/*Each section card*/
+.resources section {
+    background-color: #fff0f6;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(138,46, 104, 0.2);
+    border: 2px solid #8a2e68;
+    margin-bottom: 30px;
+}
+
+.resources section h2 {
+    font-size: 1.8rem;
+    color: #8a2e68;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #8a2e68;
+    padding-bottom: 5px;
+}
+
+.resources ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.resources li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.resources li a {
+    text-decoration: none;
+    color: #4a154b;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.resources li a:hover {
+    color: #8a2e68;
+    text-decoration: underline;
+}
+
+/*Image as links*/
+.resources li img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(138, 46, 104, 0.2);
+    transition: transform 0.2s;
+}
+
+.resources li img:hover {
+    transform: scale(1,1);
+}
+
+/*FAQ section*/
+.resources details {
+    margin: 10px 0;
+    padding: 10px 15px;
+    background-color: #fff0f6;
+    border-radius: 8px;
+    border: 1px solid #8a2e68;
+    box-shadow: 0 2px 6px rgba(138, 46, 104, 0.1)
+}
+
+.resources summary {
+    font-weight: 600;
+    cursor: pointer;
+    color: #4a154b;   
+}
+
+.resources details p {
+    margin: 5px 0 0 10px;
+    color: #5a2a50;
+}
+
+/*Contact info links*/
+.resources section p a { 
+    color: #4a154b;
+    font-weight: 600;
+}
+
+.resources section p a:hover {
+    color: #8a2e68;
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .resources li {
+        flex-direction: column;
+        align-items: flex-start
+    }
+
+    .resources li img {
+        margin-bottom: 5px;
+    }
+}
+
+.resources details[open] p {
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.logo-container {
+  display: flex;
+  align-items: center; 
+  gap: 10px;
+}
+
+.ed-logo{
+  width: 50px;  
+  height: 50px; 
+  object-fit: cover; 
+  border-radius: 5px; 
 }

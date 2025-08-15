@@ -96,9 +96,26 @@ nav ul li a:hover {
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(138,46,104,0.2);
     background: #fff0f6;
+
+    /* stack children vertically */
     display: flex;
+    flex-direction: column;
+    justify-content: center; /* centers the track and arrows vertically */
     align-items: center;
+}
+
+.h2-fact {
+    color: #8a2e68; /* your header color */
+    margin-bottom: 10px; /* spacing above facts */
+}
+
+.fact-track {
+    flex: 1; /* take remaining space so facts stay centered */
+    width: 100%;
+    display: flex;
+    align-items: center; /* vertically center facts */
     justify-content: center;
+    position: relative;
 }
 
 .fact-slider .arrow {
@@ -126,15 +143,6 @@ nav ul li a:hover {
 
 .fact-slider .arrow.right {
     right: 10px;
-}
-
-.fact-track {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .fact {
