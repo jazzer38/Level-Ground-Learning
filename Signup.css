@@ -15,11 +15,11 @@ body {
 
 /* Header matches homepage */
 header {
-    background-color: #f9cde3;
+    background: #f9cde3;
     padding: 15px 20px;
-    text-align: center;
     border-radius: 8px;
-    margin-bottom: 25px;
+    text-align: center;
+    margin-bottom:25px;
 }
 
 header h1 {
@@ -28,7 +28,6 @@ header h1 {
     margin-bottom: 10px;
     font-weight: 700;
 }
-
 nav ul {
     list-style: none;
     display: flex;

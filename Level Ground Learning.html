@@ -6,11 +6,12 @@
     <title>Level Ground Learning: Home</title>
     <!-- Link CSS -->
     <link rel="stylesheet" href="Level Ground Learning.css">
-    <!-- Link JS (defer ensures it runs after HTML loads) -->
+    <!-- Link JS -->
     <script src="Level Ground Learning.js" defer></script>
 </head>
 <body>
-    <!--Site Header and Navigation-->
+
+    <!-- Header + Navigation -->
     <header>
         <h1>Level Ground Learning</h1>
         <nav>
@@ -18,69 +19,73 @@
                 <li><a href="Level Ground Learning.html">Home</a></li>
                 <li><a href="Get Involved.html">Get Involved</a></li>
                 <li><a href="Signup.html">Signup</a></li>
-                <li><a href="Tutors.html">Meet our Tutors!</a></li>
+                <li><a href="Tutors.html">Meet the Tutors!</a></li>
                 <li><a href="Resources.html">Resources</a></li>
             </ul>
         </nav>
     </header>
 
-    <!--Our Goal + Fact Slider-->
+    <!-- Goal + Fact Slider -->
     <div class="goal-fact-slider">
         <div class="goal-text">
             <h1>Our Goal</h1>
             <p>At Level Ground Learning, we're dedicated to ensuring every child has an equal opportunity to thrive academically. Our goal is to offer free, top-quality tutoring to students who need extra support but face barriers to accessing it. By combining personalized mentorship, accessible learning resources, and strong community partnerships, we strive to create an educational environment where every student can succeed, one learner at a time.</p>
         </div>
 
-        <!--Fact generator-->
-        <div class="fact-slider">
-            <button id="factGenerator">Learn facts about tutoring!</button>
-            <p id="factText"></p>
-        </div>
+        <!-- Fact Slider -->
+<div class="fact-slider">
+    <button class="arrow left">&#10094;</button>
+    <div class="fact-track">
+        <div class="fact active">"Low-income students score 25 percentile points below their high-income peers by middle school" - ERIC</div>
+        <div class="fact">"Only around 10-11% of students receive high dosage tutoring even though its highly effective" - Center for American Progress</div>
+        <div class="fact">"High-dosage tutoring is among the most effective interventions for struggling low-SES students" - EdResearch for Action</div>
+        <div class="fact">"In large US Districts, just 0.1-0.3% of students get tutoring" - AP News</div>
+        <div class="fact">"Children from low-income families often start school already behind their peers" - Economic Policy Institute</div>
     </div>
+    <button class="arrow right">&#10095;</button>
+</div>
 
-    <!--Info section + Logo-->
+    <!-- Info + Logo Section -->
     <div class="info-logo-relation">
         <div class="info-text">
             <h1>Important Info</h1>
             <p>We're a group of passionate high school sophomores from North Jersey who are dedicated to giving back to those less fortunate through education. Led by Jasmine, Level Ground Learning offers free academic support to kids in our community. Based in Westfield, we hold tutoring sessions at local libraries as well as online. We provide a safe, welcoming, and accessible space for learning. Our sessions will most likely take place on most weekdays from 6:30-8:00 PM.</p>
         </div>
-        <img src="logo for tutoring.png" class="info-logo" alt="Level Ground Learning logo: a pink book open with a yellow sun rising out behind it">
+        <div class="info-logo-container">
+            <img src="Logo.png" class="info-logo" alt="Level Ground Learning logo: a pink book open with a yellow sun rising out behind it">
+        </div>
     </div>
 
-    <!--Articles-->
-    <div class="article-one">
+    <!-- Articles -->
+    <div class="articles-container">
+    <div class="article">
         <a href="https://news.harvard.edu/gazette/story/2023/11/new-study-finds-wide-gap-in-sat-act-test-scores-between-wealthy-lower-income-kids/">
             <img src="Standardized.webp" alt="picture of standardized test bubble answer page with a pencil on a gray table">
         </a>
     </div>
-    <div class="article-two">
+    <div class="article">
         <a href="https://www.bbc.com/news/articles/c4g0rxz2yj4o">
             <img src="Further.webp" alt="picture of a young girl from behind holding someone's hand, walking down a street">
         </a>
     </div>
+</div>
 
-    <!--Testimonial section-->
+    <!-- Testimonials -->
     <section class="testimonials">
         <h2>What People Are Saying</h2>
-
-        <!--Container holding the testimonials-->
         <div class="testimonial-slider">
-
-            <!--Single testimonial-->
             <div class="testimonial active">
                 <p>"Jasmine helped me learn multiplication and division and allowed me to bring my grades up from failing to A's and B's!"</p>
                 <h4>Malachi, 5th Grade Student</h4>
             </div>
-
             <div class="testimonial">
                 <p>Volunteering here has been so rewarding and truly makes me feel like I am making a difference! It is so fun to watch each student's progress.</p>
                 <h4>Jasmine, Tutor</h4>
             </div>
         </div>
-
-        <!--Buttons to navigate testimonials-->
         <button id="prevTestimonial">Prev</button>
         <button id="nextTestimonial">Next</button>
     </section>
+
 </body>
 </html>

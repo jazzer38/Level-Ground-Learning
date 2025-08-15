@@ -1,1 +1,32 @@
 /*CSS for Resources*/
+header {
+    background: #f9cde3;
+    padding: 15px 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #8a2e68;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #4a154b;
+    text-decoration: underline;
+}

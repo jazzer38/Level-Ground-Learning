@@ -3,74 +3,106 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background: #f5f5f5;
+    background: #ffe6ee;
+    color: #4a4a4a;
 }
 
 /*Header styling*/
 header {
-    background: #2c3e50;
-    color: white;
-    padding: 1em;
+    background: #f9cde3;
+    padding: 15px 20px;
+    border-radius: 8px;
     text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #8a2e68;
+    margin-bottom: 10px;
+    font-weight: 700;
 }
 
 /*Navigation styling*/
 nav ul {
     list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 0 1em;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
+    color: #4a4a4a;
+    font-weight: 600;
 }
+
+nav ul li a:hover {
+    color: #4a154b;
+    text-decoration: underline;
+}
+
+
 /*Section for filter dropdown*/
 .filter-section {
     text-align: center;
-    margin: 1em;
+    margin: 1.5em;
 }
 
 /*Grid for tutor card*/
 .tutor-grid {
-    display: grid;
-    grid-template-columns: repeat (auto-fit, minmax (250px, 1fr));
-    gap: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
     padding: 2em;
 }
 
 /*Each tutor card styling*/
 .tutor-card {
-    background: white;
-    border-radius: 10px;
+    background: #fff0f6;
+    border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(138, 46, 104, 0.2);
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
 }
 
 .tutor-card img {
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .tutor-info {
     padding: 1em;
-    background: white;
 }
 
-/*Hover effects: lifts cards up a bit and background text changes*/
+.tuto-info h2 {
+    color: #8a2e68;
+    margin-bottom: 0.5em;
+    font-size: 1.4rem;
+}
+
+.tutor-info p {
+    margin-bottom: 0.5em;
+}
+
+.tutor-info .subjects {
+    font-weight: bold;
+    color: #5a2a50;
+}
+
 .tutor-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(138, 46, 104, 0.4);
 }
 
-.tutor-card:hover .tutor-info {
-    background: #eaf2f8;
+@media (max-width: 700px) {
+    .tutor-grod {
+        flex-direction: column;
+        align-items: center;
+    }
 }
-
-
